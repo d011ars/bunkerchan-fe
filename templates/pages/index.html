@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="/.static/favicon.ico"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="chan.net: The Home Of Albania">
+<meta name="twitter:description" content="Leftypolbo@protonmail.com">
+<meta name="twitter:title" content="Bunkerchan.net: The Home Of Albania">
+<meta name="twitter:description" content="Bunkerchan is a far left lynxchan base                                                                                                             d imageboard for left wing politics">
+<meta name="twitter:image" content="https://bunkerchan.net/.static/logo.png">
+<meta name="description" content="Bunkerchan is a far left lynxchan based imageb                                                                                                             oard. where users discuss ideologys like maoism, trotskyism, leninism and marxis                                                                                                             m">
 <meta charset="UTF-8" />
 <meta
   name="viewport"
@@ -10,33 +18,25 @@
   type="text/css"
   rel="stylesheet" />
 <link
-  href="/.static/css/index.css"
+  href="/.static/css/yotsuba.css"
   type="text/css"
   rel="stylesheet" />
 <link
-  href="/.static/css/watcher.css"
+  href="/.static/css/index.css"
   type="text/css"
   rel="stylesheet" />
 <link
   href="/.static/css/posting.css"
   type="text/css"
   rel="stylesheet" />
+ <!--<script src="/.static/js/yotCheck.js" ></script>-->
 </head>
+<!--<body onload="CSSYotCheck()">-->
 <body>
 
-  <nav>
-    <span id="navLinkSpan"> <span>[</span> <a
-        href="/boards.js"
-        class="coloredIcon"
-        id="navBoardList">boards</a> <span>/</span> <a
-        href="/overboard"
-        class="coloredIcon"
-        id="navOverboard">overboard</a> <span>/</span> <a
-        href="/.static/posting.html"
-        class="coloredIcon"
-        id="navPosting">help</a> <span>]</span>
-    </span> <span id="navBoardsSpan"> </span> <span id="navOptionsSpan"> </span>
-  </nav>
+  <script src="/.static/js/themeLoader.js"></script>
+
+  <nav id="generalHeader"></nav>
 
   <div id="indexWrapper">
 
@@ -45,13 +45,15 @@
       class="title">
       <img
         src="/.static/logo.png"
+        class="logoImg"
         alt="logo" />
     </div>
 
     <div
       id="infoBox"
       class="title">
-      <p>Insert title here</p>
+      <p>BunkerChan</p>
+          <p>Welcome to albania</p>
     </div>
 
     <div
@@ -69,41 +71,46 @@
       <a
         href="/logs.js"
         class="coloredIcon"
-        id="linkLogs">logs</a>
+        id="linkGlobalLogs"></a>
+      <span>/</span>
+      <a
+        href="/archives.js"
+        class="coloredIcon"
+        id="linkArchives"></a>
       <span>/</span>
       <a
         href="/graphs.js"
         class="coloredIcon"
-        id="linkGraphs">daily graphs</a>
+        id="linkGraphs"></a>
       <span>/</span>
       <a
-        href="/.static/globalRules.html"
+        href="/.static/pages/globalRules.html"
         class="coloredIcon"
-        id="linkGlobalRules">global rules</a>
+        id="linkGlobalRules"></a>
       <span>/</span>
       <a
-        href="/.static/links.html"
+        href="/.static/pages/links.html"
         class="coloredIcon"
-        id="linkLinks">links</a>
+        id="linkLinks"></a>
       <span>/</span>
       <a
-        href="/.static/about.html"
+        href="/.static/pages/about.html"
         class="coloredIcon"
-        id="linkAbout">about</a>
+        id="linkAbout"></a>
       <span>/</span>
       <a
-        href="/.static/contact.html"
+        href="/.static/pages/contact.html"
         class="coloredIcon"
-        id="linkContact">contact</a>
-      <span>/</span>
-      <a
-        class="coloredIcon"
-        id="linkEngine"></a>
+        id="linkContact"></a>
       <span>/</span>
       <a
         href="/account.js"
         class="coloredIcon"
-        id="linkAccount">account</a>
+        id="linkAccount"></a>
+      <span>/</span>
+      <a
+        class="coloredIcon"
+        id="linkEngine"></a>
       <span>]</span>
     </div>
 
@@ -120,16 +127,13 @@
   </div>
 
   <footer>
-    <span>Insert footer here</span>
+    <span>Everything here is written by the users and not the site owner, Site ran by <a href="mailto:Leftypolbo@protonmail.com">d011ars</a></span>
   </footer>
 
 </body>
 
-<script src="/.static/js/settings.js"></script>
 <script src="/.static/js/api.js"></script>
-<script src="/.static/js/themes.js"></script>
 <script src="/.static/js/draggable.js"></script>
-<script src="/.static/js/watcher.js"></script>
 <script src="/.static/js/favouriteBoards.js"></script>
 
 </html>
