@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="/.static/favicon.ico"/>
 <meta charset="UTF-8" />
 <meta
   name="viewport"
@@ -26,10 +27,6 @@
   type="text/css"
   rel="stylesheet" />
 <link
-  href="/.static/css/watcher.css"
-  type="text/css"
-  rel="stylesheet" />
-<link
   href="/.static/css/settingsMenu.css"
   type="text/css"
   rel="stylesheet" />
@@ -42,36 +39,7 @@
 
   <script src="/.static/js/themeLoader.js"></script>
 
-  <nav>
-    <span id="navLinkSpan"> <span>[</span> <a
-        href="/"
-        class="coloredIcon"
-        id="navLinkHome"></a> <span>/</span> <a
-        href="/boards.js"
-        class="coloredIcon"
-        id="navBoardList"></a> <span>/</span> <a
-        href="/overboard"
-        class="coloredIcon"
-        id="navOverboard"></a> <span>/</span> <a
-        href="/.static/pages/posting.html"
-        class="coloredIcon"
-        id="navPosting"></a> <span>]</span>
-    </span> <span id="navBoardsSpan"> </span> <span id="navOptionsSpan"> <span>[</span>
-      <a
-        href=".."
-        id="linkBack"
-        class="coloredIcon"></a> <span>/</span> <a
-        href="#bannerImage"
-        id="linkTop"
-        class="coloredIcon"></a> <span>/</span> <a
-        href="#footer"
-        id="linkBottom"
-        class="coloredIcon"></a> <span>/</span> <a
-        href="../catalog.html"
-        id="navCatalog"
-        class="coloredIcon"></a> <span>]</span>
-    </span>
-  </nav>
+  <nav id="threadHeader"></nav>
 
   <div
     class="hidden"
@@ -100,6 +68,7 @@
         <p id="labelName"></p>
       </div>
       <p id="labelDescription"></p>
+	  <a href="../catalog.html">catalog</a>
     </header>
 
     <div id="postingForm">
@@ -139,7 +108,6 @@
 
     <div id="divControls">
 
-      
       <form
         action="/changeThreadSettings.js"
         method="post"
@@ -272,7 +240,7 @@
 
     </div>
 
-    <div id="divMerge">
+	  <div id="divMerge">
 
       <form
         action="/mergeThread.js"
@@ -311,6 +279,7 @@
       </form>
 
     </div>
+	
 
     <div id="ipDelete">
 
