@@ -207,65 +207,68 @@ thread.mergeThread = function() {
 };
 
 thread.archiveThread = function() {
-
+ 
   if (!document.getElementById('checkboxArchive').checked) {
     alert('You must confirm that you wish to archive this thread.');
     return;
   }
-
+ 
   api.formApiRequest('archiveThread', {
     confirmation : true,
     boardUri : api.boardUri,
     threadId : api.threadId
   }, function archived(status, data) {
-
+ 
     if (status === 'ok') {
-
+ 
       api.resetIndicators({
         locked : document.getElementsByClassName('lockIndicator').length,
         pinned : document.getElementsByClassName('pinIndicator').length,
         cyclic : document.getElementsByClassName('cyclicIndicator').length,
+        cyclic : document.getElementsByClassName('bumpLockIndicator').length,
         archived : true
       });
-
+ 
     } else {
       alert(status + ': ' + JSON.stringify(data));
     }
-
+ 
   });
-
+ 
 };
-
+ 
 thread.saveThreadSettings = function() {
-
+ 
+  var autoSage = document.getElementById('checkboxAutoSage').checked;
   var pinned = document.getElementById('checkboxPin').checked;
   var locked = document.getElementById('checkboxLock').checked;
   var cyclic = document.getElementById('checkboxCyclic').checked;
-
+ 
   api.formApiRequest('changeThreadSettings', {
     boardUri : api.boardUri,
     threadId : api.threadId,
+    autoSage: autoSage,
     pin : pinned,
     lock : locked,
     cyclic : cyclic
   }, function setLock(status, data) {
-
+ 
     if (status === 'ok') {
-
+ 
       api.resetIndicators({
         locked : locked,
         pinned : pinned,
         cyclic : cyclic,
+		autoSage: autoSage,
         archived : document.getElementsByClassName('archiveIndicator').length
       });
-
+ 
     } else {
       alert(status + ': ' + JSON.stringify(data));
     }
   });
-
+ 
 };
-
 thread.replyCallback = function(status, data) {
 
   if (status === 'ok') {
