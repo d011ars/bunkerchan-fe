@@ -5,7 +5,19 @@ themes.init = function() {
   themes.themes = [ {
     label : 'Clear',
     id : 'clear'
-  } ];
+  },
+  {
+	  label: 'Yotsuba',
+	  id: 'yotsuba'
+  },
+  {
+	  label: 'Dark',
+	  id: 'dark'
+  },
+  {
+	  label: 'Colgate',
+	  id: 'colgate'
+  }	  ];
 
   var postingLink = document.getElementById('navPosting');
 
@@ -13,15 +25,11 @@ themes.init = function() {
 
     var referenceNode = postingLink.nextSibling;
 
-    postingLink.parentNode.insertBefore(document.createTextNode(' '),
-        referenceNode);
 
     var divider = document.createElement('span');
     divider.innerHTML = '/';
     postingLink.parentNode.insertBefore(divider, referenceNode);
 
-    postingLink.parentNode.insertBefore(document.createTextNode(' '),
-        referenceNode);
 
     var themeSelector = document.createElement('select');
     themeSelector.id = 'themeSelector';
