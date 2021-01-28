@@ -1,20 +1,31 @@
-#mainPanel, #sideCatalogDiv {
+#sideCatalogDiv {
+  position: fixed;
   overflow-y: auto;
+  right: 0;
+  width: 20%;
+  top: 22px;
   height: calc(100vh - 22px);
-  margin-top: 22px;
+  padding: 0 10px 0 10px;
+  overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch; /*IOS safari mobile, enables momentum/inertia scrolling in the thread view and sidebar view*/
+}
+
+.mainPanelWithSideCatalog {
+  width: 80%;
 }
 
 #navSideCatalog:before {
   content: "\e088";
 }
 
+/*
 #sideCatalogDiv {
   float: right;
   padding: 0 10px 0 10px;
   max-width: 20%;
   margin-top: 0;
 }
+*/
 
 #sideCatalogBody hr {
   clear: both;
