@@ -224,14 +224,14 @@ header {
 }
 
 nav {
-  height: 18px;
+  /* height: 18px; */
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #151515;
   border-bottom: 1px solid #B0790A;
   padding-bottom: 3px;
-  font-size: 70%;
+  font-size: 12px;
   /*text-align: center;*/
   z-index: 1;
 }
@@ -241,13 +241,14 @@ nav {
 }
 
 nav span, nav a {
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration: none;
-  margin: 0 0.2em;
+  /* margin: 0 0.2em; */
+  margin: 0 0em;
 }
 
 #navLinkSpan {
-  float: left;
+  /* float: left; */
 }
 
 #navOptionsSpan {
