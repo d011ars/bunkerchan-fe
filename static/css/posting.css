@@ -150,7 +150,6 @@ video {
   margin: 1em 1em 1em 3em;
   white-space: pre-wrap;
   word-wrap: break-word;
-  width: 75%;
 }
 
 .divBanMessage {
@@ -419,6 +418,7 @@ video {
   }
   .divMessage {
     margin-left: 1em;
+    width: 100%;
   }
 }
 
