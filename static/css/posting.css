@@ -419,6 +419,7 @@ video {
   .divMessage {
     margin-left: 1em;
     width: 100%;
+    word-wrap: break-word;
   }
 }
 
