@@ -283,6 +283,7 @@ video {
 #divMessage {
   text-align: center;
   white-space: pre-wrap;
+  word-break: break-all;
 }
 
 .multipleUploads .labelHash {
@@ -418,8 +419,6 @@ video {
   }
   .divMessage {
     margin-left: 1em;
-  white-space: pre-wrap;
-  word-wrap: break-all;
   }
 }
 
