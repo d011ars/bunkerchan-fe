@@ -549,6 +549,7 @@ footer {
     padding-top: 10px;
     padding-left: 0;
     padding-right: 0;
+    word-break: break-word;
   }
   .captchaImage {
     max-width: 100%;
